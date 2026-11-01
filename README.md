@@ -169,7 +169,9 @@ Explore my repositories for projects, experiments, and creative implementations.
 
 `CODE → COMMIT → PUSH → COLLABORATE → BUILD`
 
+## 📊 3D Contribution Graph
 
+![3D Contribution Graph](./profile-3d-contrib/profile-green.svg)
 ---
 
 <div align="center">
