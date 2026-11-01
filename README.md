@@ -147,6 +147,29 @@ Explore my repositories for projects, experiments, and creative implementations.
 
 </div>
 
+<div align="center">
+
+## `// 004 — VERSION CONTROL & DEVELOPER WORKFLOW`
+
+<img src="https://img.shields.io/badge/GIT-LEARNING%20COMPLETED-67E8F9?style=for-the-badge&logo=git&logoColor=67E8F9&labelColor=080D19"/>
+<img src="https://img.shields.io/badge/GITHUB-TRAINING%20COMPLETED-C4B5FD?style=for-the-badge&logo=github&logoColor=C4B5FD&labelColor=080D19"/>
+
+</div>
+
+| SKILL | STATUS |
+|---|---|
+| Git fundamentals | ✅ Completed |
+| Version control | ✅ Completed |
+| GitHub setup | ✅ Completed |
+| Repository management | ✅ Completed |
+| Git workflow | ✅ Completed |
+| GitHub project hosting | ✅ Completed |
+
+**Developer workflow:** 
+
+`CODE → COMMIT → PUSH → COLLABORATE → BUILD`
+
+
 ---
 
 <div align="center">
