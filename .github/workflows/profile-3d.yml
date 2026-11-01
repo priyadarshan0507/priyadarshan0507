@@ -1,4 +1,3 @@
-
 name: NEXUS 0507 - 3D Contribution Generator
 
 on:
@@ -9,6 +8,11 @@ on:
 permissions:
   contents: write
 
+# Prevent overlapping runs from trying to push to main simultaneously.
+concurrency:
+  group: profile-3d-contribution-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   generate:
     runs-on: ubuntu-latest
@@ -16,6 +20,9 @@ jobs:
     steps:
       - name: Checkout profile repository
         uses: actions/checkout@v5
+        with:
+          ref: main
+          fetch-depth: 0
 
       - name: Generate 3D contribution calendar
         uses: yoshi389111/github-profile-3d-contrib@latest
@@ -23,12 +30,26 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: priyadarshan0507
 
-      - name: Save generated graphics
+      - name: Commit and push generated graphics
+        shell: bash
         run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
-          git add -A
-          if ! git diff --cached --quiet; then
-            git commit -m "Update 3D contribution graphics"
-            git push
+          set -euo pipefail
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # Stage only the files produced by this generator.
+          git add profile-3d-contrib/
+
+          if git diff --cached --quiet; then
+            echo "No generated graphics changed; nothing to commit."
+            exit 0
           fi
+
+          git commit -m "Update 3D contribution graphics"
+
+          # Integrate any commits that reached origin/main during this run.
+          git fetch origin main
+          git rebase origin/main
+
+          git push origin HEAD:main
