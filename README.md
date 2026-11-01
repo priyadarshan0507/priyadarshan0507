@@ -50,7 +50,7 @@ I want my repositories to show more than code: **the problem, the decisions, and
     <td width="50%">
       <h3>🚧 Project spotlight 01</h3>
       <b>Your strongest completed project</b><br/>
-      Add a one-line description of the problem it solves, its key feature, and the tech used.<br/><br/>
+      jarvis my personal assistant .<br/><br/>
       <a href="https://github.com/priyadarshan0507?tab=repositories">Browse repositories →</a>
     </td>
     <td width="50%">
