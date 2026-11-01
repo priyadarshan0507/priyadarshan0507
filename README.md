@@ -112,7 +112,9 @@ I believe code is not just a tool for solving problems — it's a medium for cre
 
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=priyadarshan0507&bg_color=080D19&color=67E8F9&line=8B5CF6&point=FFFFFF&area=true&hide_border=true" width="100%" />
+## 📊 3D Contribution Graph
+
+![3D Contribution Graph](./profile-3d-contrib/profile-green.svg)
 
 </div>
 
@@ -169,9 +171,7 @@ Explore my repositories for projects, experiments, and creative implementations.
 
 `CODE → COMMIT → PUSH → COLLABORATE → BUILD`
 
-## 📊 3D Contribution Graph
 
-![3D Contribution Graph](./profile-3d-contrib/profile-green.svg)
 ---
 
 <div align="center">
