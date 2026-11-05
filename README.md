@@ -1,3 +1,9 @@
+
+<div align="center">
+  <img src="priyadarshan_github_banner.gif"
+       width="100%"
+       alt="Priyadarshan animated portfolio banner"/>
+</div>
 <div align="center">
 
 <img src="https://capsule-render.vercel.app/api?type=waving&height=230&color=0:050816,45:0E7490,100:6D28D9&text=PRIYADARSHAN%20S.&fontSize=48&fontColor=E0F2FE&fontAlignY=38&desc=BUILDING%20WHAT%20DOESN'T%20EXIST%20YET&descSize=15&descAlignY=60&animation=fadeIn" width="100%" />
